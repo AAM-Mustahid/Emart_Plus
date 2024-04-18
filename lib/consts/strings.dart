@@ -1,3 +1,12 @@
 const appname = "E-Mart Plus";
 const appversion = "Version 0.0.1";
 const credits = "@shefat2002";
+const email = "Email";
+const emailHint = "shefat2002@gmail.com";
+const password = "Password";
+const passwordHint = "********";
+const forgetPass = "Forget Password?";
+const signup = "Sign up";
+const login = "Login";
+const createNewAccount = "Or, create a new account";
+const loginWith = "Login with";
