@@ -1,5 +1,5 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "cmake.sourceDirectory": "automatic",
+    "cmake.sourceDirectory": "D:/Flutter_Projects/emart_plus/linux",
     "java.compile.nullAnalysis.mode": "automatic"
 }
