@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
     var navBody = [
       Container(color: Colors.blue),
       Container(color: Colors.amber),
-      Container(color: Colors.purple),
+      Container(color: Colors.green),
       Container(color: Colors.cyan)
     ];
     return Scaffold(
