@@ -3,9 +3,6 @@ import 'package:emart_plus/widgets_common/applogo_widgets.dart';
 import 'package:emart_plus/widgets_common/bg_widget.dart';
 import 'package:emart_plus/widgets_common/custom_textfield.dart';
 import 'package:emart_plus/widgets_common/our_button.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class SignupScreen extends StatefulWidget {
