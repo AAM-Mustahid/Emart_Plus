@@ -2,8 +2,6 @@ import 'package:emart_plus/consts/consts.dart';
 import 'package:emart_plus/consts/lists.dart';
 import 'package:emart_plus/views/home_screen/components/featured_button.dart';
 import 'package:emart_plus/widgets_common/home_button.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -71,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   //2nd
-                  10.heightBox,
+                  20.heightBox,
                   VxSwiper.builder(
                     aspectRatio: 16 / 9,
                     autoPlay: true,
@@ -91,7 +89,7 @@ class HomeScreen extends StatelessWidget {
                     },
                   ),
 
-                  10.heightBox,
+                  20.heightBox,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: List.generate(
@@ -197,6 +195,71 @@ class HomeScreen extends StatelessWidget {
                         )
                       ],
                     ),
+                  ),
+
+                  //3rd
+                  20.heightBox,
+                  VxSwiper.builder(
+                    aspectRatio: 16 / 9,
+                    autoPlay: true,
+                    height: 150,
+                    enlargeCenterPage: true,
+                    itemCount: secondSlidersList.length,
+                    itemBuilder: (context, index) {
+                      return Image.asset(
+                        secondSlidersList[index],
+                        fit: BoxFit.fill,
+                      )
+                          .box
+                          .rounded
+                          .clip(Clip.antiAlias)
+                          .margin(const EdgeInsets.symmetric(horizontal: 8))
+                          .make();
+                    },
+                  ),
+
+                  20.heightBox,
+                  GridView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: 6,
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 8,
+                            crossAxisSpacing: 8,
+                            mainAxisExtent: 300),
+                    itemBuilder: (context, index) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            imgP5,
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          const Spacer(),
+                          "Laptop"
+                              .text
+                              .fontFamily(semibold)
+                              .color(darkFontGrey)
+                              .make(),
+                          10.heightBox,
+                          "\$600"
+                              .text
+                              .color(redColor)
+                              .fontFamily(bold)
+                              .size(16)
+                              .make()
+                        ],
+                      )..box
+                          .white
+                          .margin(const EdgeInsets.symmetric(horizontal: 4))
+                          .roundedSM
+                          .padding(const EdgeInsets.all(12))
+                          .make();
+                    },
                   )
                 ],
               ),
