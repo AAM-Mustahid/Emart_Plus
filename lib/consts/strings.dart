@@ -21,3 +21,11 @@ const home = "Home",
     categories = "Categories",
     cart = "Cart",
     account = "Account";
+
+const searchanything = "Search in Emart",
+    todaydeal = "Today' Deal",
+    flashsale = "Flash Sale",
+    topSellers = "Top Sellers",
+    brand = "Brand",
+    topCategories = "Top Categories",
+    featuredCategories = "Featured Categories";
