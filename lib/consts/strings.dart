@@ -61,4 +61,7 @@ const video = "Video",
 
 //profile
 
-const logout = "Logout";
+const logout = "Logout",
+    wishlist = "My Wishlist",
+    orders = "My Orders",
+    messeges = "Messages";
