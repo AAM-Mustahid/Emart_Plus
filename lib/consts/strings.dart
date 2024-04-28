@@ -22,6 +22,7 @@ const home = "Home",
     cart = "Cart",
     account = "Account";
 
+//home screen
 const searchanything = "Search in Emart",
     todaydeal = "Today' Deal",
     flashsale = "Flash Sale",
@@ -36,3 +37,15 @@ const searchanything = "Search in Emart",
     girlsDress = "Girl Dresses",
     featuredProduct = "Featured Product",
     featuredCategories = "Featured Categories";
+
+// category screen
+
+const womenClothing = "Women Clothing",
+    menClothingFashion = "Men Clothing & Fashion",
+    compAccess = "Computer & Accessories",
+    automobile = "Automobile",
+    kidtoys = "Kids & Toys",
+    sports = "Sports",
+    jewelery = "Jewelery",
+    cellphone = "Cellphone & Tab",
+    furniture = "Furniture";

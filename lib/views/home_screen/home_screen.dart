@@ -253,7 +253,8 @@ class HomeScreen extends StatelessWidget {
                               .size(16)
                               .make()
                         ],
-                      )..box
+                      )
+                          .box
                           .white
                           .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .roundedSM
