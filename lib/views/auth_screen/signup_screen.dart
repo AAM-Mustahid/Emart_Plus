@@ -1,4 +1,5 @@
 import 'package:emart_plus/consts/consts.dart';
+import 'package:emart_plus/controllers/auth_controller.dart';
 import 'package:emart_plus/widgets_common/applogo_widgets.dart';
 import 'package:emart_plus/widgets_common/bg_widget.dart';
 import 'package:emart_plus/widgets_common/custom_textfield.dart';
@@ -14,6 +15,7 @@ class SignupScreen extends StatefulWidget {
 
 class _SignupScreenState extends State<SignupScreen> {
   bool? isCheck = false;
+  var controller = Get.put(AuthController());
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:emart_plus/consts/consts.dart';
 import 'package:emart_plus/consts/lists.dart';
-import 'package:emart_plus/views/profile_screen/components/detailsCart.dart';
+import 'package:emart_plus/views/profile_screen/components/details_cart.dart';
 import 'package:emart_plus/widgets_common/bg_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
