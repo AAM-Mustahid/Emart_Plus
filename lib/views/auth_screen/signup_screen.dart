@@ -39,17 +39,25 @@ class _SignupScreenState extends State<SignupScreen> {
             Column(
               children: [
                 customTextField(
-                    hint: nameHint, title: name, controller: nameController),
+                    hint: nameHint,
+                    title: name,
+                    controller: nameController,
+                    isPass: false),
                 customTextField(
-                    hint: emailHint, title: email, controller: emailController),
+                    hint: emailHint,
+                    title: email,
+                    controller: emailController,
+                    isPass: false),
                 customTextField(
                     hint: passwordHint,
                     title: password,
-                    controller: passwordController),
+                    controller: passwordController,
+                    isPass: true),
                 customTextField(
                     hint: passwordHint,
                     title: retypePass,
-                    controller: passwordRetypeController),
+                    controller: passwordRetypeController,
+                    isPass: true),
                 Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
