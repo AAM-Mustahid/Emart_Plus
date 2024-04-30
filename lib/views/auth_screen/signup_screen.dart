@@ -1,5 +1,6 @@
 import 'package:emart_plus/consts/consts.dart';
 import 'package:emart_plus/controllers/auth_controller.dart';
+import 'package:emart_plus/views/home_screen/home.dart';
 import 'package:emart_plus/widgets_common/applogo_widgets.dart';
 import 'package:emart_plus/widgets_common/bg_widget.dart';
 import 'package:emart_plus/widgets_common/custom_textfield.dart';
@@ -17,6 +18,11 @@ class _SignupScreenState extends State<SignupScreen> {
   bool? isCheck = false;
   var controller = Get.put(AuthController());
 
+  var nameController = TextEditingController();
+  var emailController = TextEditingController();
+  var passwordController = TextEditingController();
+  var passwordRetypeController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -32,10 +38,18 @@ class _SignupScreenState extends State<SignupScreen> {
             15.heightBox,
             Column(
               children: [
-                customTextField(hint: nameHint, title: name),
-                customTextField(hint: emailHint, title: email),
-                customTextField(hint: passwordHint, title: password),
-                customTextField(hint: passwordHint, title: retypePass),
+                customTextField(
+                    hint: nameHint, title: name, controller: nameController),
+                customTextField(
+                    hint: emailHint, title: email, controller: emailController),
+                customTextField(
+                    hint: passwordHint,
+                    title: password,
+                    controller: passwordController),
+                customTextField(
+                    hint: passwordHint,
+                    title: retypePass,
+                    controller: passwordRetypeController),
                 Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
@@ -86,13 +100,32 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 5.heightBox,
                 ourButton(
-                        color: isCheck == true ? redColor : fontGrey,
-                        title: signup,
-                        textColor: whiteColor,
-                        onPress: () {})
-                    .box
-                    .width(context.screenWidth - 50)
-                    .make(),
+                    color: isCheck == true ? redColor : fontGrey,
+                    title: signup,
+                    textColor: whiteColor,
+                    onPress: () async {
+                      if (isCheck != false) {
+                        try {
+                          await controller
+                              .signupMethod(
+                                  context: context,
+                                  email: emailController.text,
+                                  password: passwordController.text)
+                              .then((value) {
+                            return controller.storeUserData(
+                                email: emailController.text,
+                                name: nameController.text,
+                                password: passwordController.text);
+                          }).then((value) {
+                            VxToast.show(context, msg: loggedin);
+                            Get.offAll(() => const Home());
+                          });
+                        } catch (e) {
+                          auth.signOut();
+                          VxToast.show(context, msg: e.toString());
+                        }
+                      }
+                    }).box.width(context.screenWidth - 50).make(),
                 10.heightBox,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
