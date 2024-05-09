@@ -1,13 +1,11 @@
 import 'package:emart_plus/consts/consts.dart';
 import 'package:emart_plus/controllers/auth_controller.dart';
 import 'package:emart_plus/views/auth_screen/login_screen.dart';
-import 'package:emart_plus/views/home_screen/home.dart';
 import 'package:emart_plus/widgets_common/applogo_widgets.dart';
 import 'package:emart_plus/widgets_common/bg_widget.dart';
 import 'package:emart_plus/widgets_common/custom_textfield.dart';
 import 'package:emart_plus/widgets_common/our_button.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
