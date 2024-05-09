@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "299394423644",
-    "project_id": "emart-plus",
-    "storage_bucket": "emart-plus.appspot.com"
+    "project_number": "712196425896",
+    "firebase_url": "https://emartplus-a0fcd-default-rtdb.firebaseio.com",
+    "project_id": "emartplus-a0fcd",
+    "storage_bucket": "emartplus-a0fcd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:299394423644:android:f43f0686575929d159ff99",
+        "mobilesdk_app_id": "1:712196425896:android:23c1b2ccf1b2f7d976da9d",
         "android_client_info": {
           "package_name": "com.example.emart_plus"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD1WMT_dVyFHo4BfGiY3vEF6d_L7S3OVBE"
+          "current_key": "AIzaSyBgZo1s-MiMON-_gm1StYHhek5Oq0gYcFs"
         }
       ],
       "services": {
