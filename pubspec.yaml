@@ -45,6 +45,7 @@ dependencies:
   firebase_ui_auth: ^1.14.0
   flutterfire_cli: any
   flutterfire_gen: any
+  image_picker: ^1.1.1
 
 dev_dependencies:
   flutter_test:
