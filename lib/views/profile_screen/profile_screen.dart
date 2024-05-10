@@ -1,6 +1,7 @@
 import 'package:emart_plus/consts/consts.dart';
 import 'package:emart_plus/consts/lists.dart';
 import 'package:emart_plus/controllers/auth_controller.dart';
+import 'package:emart_plus/controllers/profile_controller.dart';
 import 'package:emart_plus/views/auth_screen/login_screen.dart';
 import 'package:emart_plus/views/profile_screen/components/details_cart.dart';
 import 'package:emart_plus/views/profile_screen/edit_profile.dart';
@@ -12,6 +13,7 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var controller = Get.put(ProfileController());
     return bgWidget(
         child: Scaffold(
       body: SafeArea(
