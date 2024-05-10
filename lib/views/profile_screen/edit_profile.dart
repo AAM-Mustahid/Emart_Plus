@@ -16,8 +16,8 @@ class EditProfile extends StatelessWidget {
     return bgWidget(
         child: Scaffold(
       appBar: AppBar(),
-      body: Center(
-        child: Column(
+      body: Obx(
+        () => Column(
           children: [
             controller.profileImgPath.isEmpty
                 ? Image.asset(imgProfile2, width: 60, fit: BoxFit.cover)
