@@ -10,6 +10,7 @@ const name = "Name";
 const nameHint = "Shefat Al Mahmud";
 const forgetPass = "Forget Password?";
 const signup = "Sign up";
+const createdac = "Account created successfully!\nNow you can login.";
 const login = "Login";
 const loggedin = "Login Successfully";
 const loggedout = "Logout Successfully";

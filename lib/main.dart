@@ -29,3 +29,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+//flutter build apk --release --split-per-abi

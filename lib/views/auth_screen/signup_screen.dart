@@ -132,7 +132,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                     name: nameController.text,
                                   );
                                 }).then((value) {
-                                  VxToast.show(context, msg: loggedin);
+                                  VxToast.show(context, msg: createdac);
                                   Get.offAll(() => const LoginScreen());
                                 });
                               } catch (e) {
